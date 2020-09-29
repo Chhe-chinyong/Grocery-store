@@ -78,9 +78,9 @@ head{
     top: 50%;
     left: 50%;
     font-size: 2rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
     transform: translate(-50%,-50%);
-    min-height: 3rem;
+    max-height: 2rem;
     
 }
 
@@ -132,43 +132,6 @@ head{
 #kpc a:hover{
     color: red;
 }
-
-/* .photos {
-    display: flex;
-    max-width: 100%;
-    height: auto;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    margin: auto;
-} */
-
-/* .photos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #FAFAFA;
-    margin: auto;
-    width: 80%;
-} */
-
-/* .photo {
-    align-items: center;
-    display: flex;
-    
-}
-
-.photo img {
-    width: 20rem;
-    height: auto;
-}
-
-.photo span {
-    padding: 2rem;
-    font-weight: 200;
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-} */
-
 
 
 .photos {
@@ -238,7 +201,9 @@ head{
 
 .footer {
     width: 80%;
-    height: 300px;
+    /* height: 300px; */
+    max-height: 500px;
+    min-height: 200px;
     font-family: 'Lato', sans-serif;
     margin: 4rem auto;
     display: flex;
@@ -255,9 +220,13 @@ head{
     /* identical to box height */
     text-align: left;
     color: #101010;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    min-width: 7rem;
 }
 
 .content {
+    min-width: 7rem;
     font-family: Lato;
     font-style: normal;
     font-weight: normal;
@@ -265,6 +234,7 @@ head{
     line-height: 150%;
     /* or 18px */
     color: #101010;
+    
 }
 
 
@@ -272,6 +242,41 @@ head{
     padding-left: 1.2rem;
 }
 
+#first {
+     width: 100px; 
+     height: 35px;
+    padding-top: 15px; 
+     padding-right: 8px; 
+     /* padding: 15px; */
+}
+
+#second {
+    width: 100px;
+    height: 45px; 
+    padding-top: 5px;
+}
+
+.payment-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+#credit {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    padding: 1rem;
+    
+}
+
+.credit {
+    width: 50%;
+    text-align: center;
+    display: block;
+}
 /* responsive */
 
  @media only screen and (max-width: 900px)
@@ -297,26 +302,25 @@ head{
     } 
 
 
-.title {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    text-align: left;
-    color: #101010;
-}
-
-.content {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 150%;
-    /* or 18px */
-    color: #101010;
-}
-
-
 } 
+
+@media only screen and (max-width: 480px){
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .payment {
+        flex-direction: column;
+    }
+
+    .payment-img{
+        justify-content: flex-start;
+    }
+
+   
+}
