@@ -80,8 +80,7 @@ head{
     font-size: 2rem;
     margin: 1rem auto;
     transform: translate(-50%,-50%);
-    max-height: 2rem;
-    
+    max-height: 2rem;   
 }
 
 
@@ -143,9 +142,6 @@ head{
     height: auto;
 }
 
-
-
-
 .photos .text {
     width: 50%;   
     display: flex;
@@ -158,9 +154,8 @@ head{
 }
 
 .photos img {
-    /* align-items: center; */
     width: 30rem;
-    height: auto;
+    height: 50%;
     padding: 3rem 0;
     background-size: cover; 
     margin: 1rem 0;
@@ -305,6 +300,25 @@ head{
 } 
 
 @media only screen and (max-width: 480px){
+
+    .photos .text {
+        width: 20rem;
+        /* margin-top: 3rem; */
+        max-height: 8rem; 
+        justify-content: space-between; 
+    } 
+
+    .photos.news {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        /* color:red */
+        margin: 2rem 0;
+    }
+    .photos img {
+        margin-top: 3rem;
+        width: 22rem;
+        height: auto;
+    } 
     .nav-bar {
         flex-direction: column;
         align-items: center;
