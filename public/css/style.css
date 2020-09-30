@@ -319,7 +319,7 @@ head{
         background-size: cover;
         margin-top: 3rem;
         width: 22rem;
-        height: auto;
+        height: 20rem;
     } 
     .nav-bar {
         flex-direction: column;
