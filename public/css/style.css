@@ -155,7 +155,7 @@ head{
 
 .photos img {
     width: 30rem;
-    height: 25rem;
+    height: 30%;
     padding: 3rem 0;
     background-size: cover; 
     margin: 1rem 0;
@@ -293,7 +293,7 @@ head{
     .photos img {
         margin-top: 3rem;
         width: 22rem;
-        height: 20rem;
+        height: 30%;
         background-size: cover;
     } 
 
@@ -319,7 +319,7 @@ head{
         background-size: cover;
         margin-top: 3rem;
         width: 22rem;
-        height: 20rem;
+        height: 30%;
     } 
     .nav-bar {
         flex-direction: column;
