@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./public/css/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://kit.fontawesome.com/d8a74e502c.js" crossorigin="anonymous"></script>
     <title>Tang an</title>
   </head>
 
@@ -37,7 +39,7 @@
                 <h1>Our Products in store</h1>
                 <h3>A great place for grocery products in <strong id="kpc"><a href="https://goo.gl/maps/L31qvSMat4JsGisJ6" target="__blank">Kompong Cham</a>.</strong></h3>
               </div>
-              <div class="photos">
+              <div class="photos" data-aos="fade-left">
                 <div class="text">
                   <h1>Easy to find</h1>
                   <p>Tang An grocery store is located in west of Phsar thom market in central of Kompong cham Province. Around 2 minutes from Kizuna roundabout.</p>
@@ -45,7 +47,7 @@
                 <img src="./public/images/IMG_8079 3.JPG" alt="in front of store">
               </div>
 
-              <div class="photos news" >
+              <div class="photos news"  data-aos="fade-right">
                 <img src="./public/images/IMG_8088 3.jpg" alt="Wide products">
                 <div class="text">
                   <h1>we love to serve you </h1>
@@ -103,7 +105,14 @@
           </div>
       </footer>
       
-      
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({
+          duration:1000,
+          once: true
+        });
+      </script>
+
   </body>
 </html>
 
